@@ -1,0 +1,651 @@
+
+:root {
+  --color-fondo: #e2c9c9;
+  --color-fondo2: #e9e6e6;
+  --color-letra: #c0c4bf;
+  --color-cuadro: #000000;
+  --color-4: #161414;
+  --tam-nombre: 10px;
+  --tam-texto: 12px;
+  --fuente-nombre:font-family: 'Slabo 12px', serif;
+  --fuente-texto:Arial, Helvetica, sans-serif;
+  --ancho: 150px;
+  --alto: 150px;
+  --font-size-1: 10px;
+  --font-size-3: 16px;
+  --font-size-4:14px ;
+  --tam-img: 100px;
+ 
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url(imagenes/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*organizar los div */
+    flex-direction: row; /* organizando el logo y el menu*/
+    justify-content: space-between; /* justificar el contendio*/
+    align-items: center;
+  }
+  
+  .contenedor {
+    width: 100%;
+    max-width: 700px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  
+  }
+  .nombre1 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre1 .imagen1 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/1.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre1 .imagen1:hover {
+    background: url(imagenes/1a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre1 .t1 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre1 .imagen1 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre1 .t1 {
+      font-size: var(--font-size-3);
+    }
+    .nombre1 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+  /*-----------------------------------*/
+  .nombre2 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre2 .imagen2 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/2.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre2 .imagen2:hover {
+    background: url(imagenes/2a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre2 .t2 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre2 .imagen2 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre2 .t2 {
+      font-size: var(--font-size-3);
+    }
+    .nombre2 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+  
+  /*---------------------------------*/
+  .nombre3 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre3 .imagen3 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/3.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre3 .imagen3:hover {
+    background: url(imagenes/3a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre3 .t3 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre3 .imagen3 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre3 .t3 {
+      font-size: var(--font-size-3);
+    }
+    .nombre3 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+  /* ---------------------------------*/
+   .nombre4 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre4 .imagen4 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/4.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre4 .imagen4:hover {
+    background: url(imagenes/4a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre4 .t4 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre4 .imagen4 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre4 .t4 {
+      font-size: var(--font-size-3);
+    }
+    .nombre4 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+   /*---------------------------------*/
+   .nombre5 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre5 .imagen5 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/5.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre5 .imagen5:hover {
+    background: url(imagenes/5a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre5 .t5 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre5 .imagen5{
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre5 .t5 {
+      font-size: var(--font-size-3);
+    }
+    .nombre5 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+   /*---------------------------------*/
+   .nombre6 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre6 .imagen6 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/6.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre6 .imagen6:hover {
+    background: url(imagenes/6a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre6 .t6 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre6 .imagen6 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre6 .t6 {
+      font-size: var(--font-size-3);
+    }
+    .nombre6 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+   /*---------------------------------*/
+   .nombre7 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre7 .imagen7 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/7.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre7 .imagen7:hover {
+    background: url(imagenes/7a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre7 .t7 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre7 .imagen7 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre7 .t7 {
+      font-size: var(--font-size-3);
+    }
+    .nombre7 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+  /*---------------------------------*/
+  .nombre8 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre8 .imagen8 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/8.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre8 .imagen8:hover {
+    background: url(imagenes/8a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre8 .t8 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre8 .imagen8 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre8 .t8 {
+      font-size: var(--font-size-3);
+    }
+    .nombre8 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+   /*---------------------------------*/
+   .nombre9 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre9 .imagen9 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/9.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre9 .imagen9:hover {
+    background: url(imagenes/19a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre9 .t9 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre9 .imagen9 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre9 .t9 {
+      font-size: var(--font-size-3);
+    }
+    .nombre9 {
+      font-size: var(--font-size-4);
+      
+    }
+  }

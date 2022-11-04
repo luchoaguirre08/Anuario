@@ -1,0 +1,653 @@
+
+:root {
+  --color-fondo: #e2c9c9;
+  --color-fondo2: #e9e6e6;
+  --color-letra: #c0c4bf;
+  --color-cuadro: #000000;
+  --color-4: #161414;
+  --tam-nombre: 10px;
+  --tam-texto: 12px;
+  --fuente-nombre:font-family: 'Slabo 12px', serif;
+  --fuente-texto:Arial, Helvetica, sans-serif;
+  --ancho: 150px;
+  --alto: 150px;
+  --font-size-1: 10px;
+  --font-size-3: 16px;
+  --font-size-4:14px ;
+  --tam-img: 100px;
+ 
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url(imagenes/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*organizar los div */
+    flex-direction: row; /* organizando el logo y el menu*/
+    justify-content: space-between; /* justificar el contendio*/
+    align-items: center;
+  }
+  
+  .contenedor {
+    width: 100%;
+    max-width: 700px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  
+  }
+  .nombre28 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre28 .imagen28 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/28.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre28 .imagen28:hover {
+    background: url(imagenes/10a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre28 .t28 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre28 .imagen28 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre28 .t28 {
+      font-size: var(--font-size-3);
+    }
+    .nombre28 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+  /*-----------------------------------*/
+  .nombre29 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre29 .imagen29 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/29.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre29 .imagen29:hover {
+    background: url(imagenes/29a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre29 .t29 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre29 .imagen29 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre29 .t29 {
+      font-size: var(--font-size-3);
+    }
+    .nombre29 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+  
+  /*---------------------------------*/
+  .nombre30 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre30 .imagen30 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/30.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre30 .imagen30:hover {
+    background: url(imagenes/30a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre30 .t30 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre30 .imagen30 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre30 .t30 {
+      font-size: var(--font-size-3);
+    }
+    .nombre30 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+  /* ---------------------------------*/
+   .nombre31 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre31 .imagen31 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/31.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre31 .imagen31:hover {
+    background: url(imagenes/31a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre31 .t31 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre31 .imagen31 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre31 .t31 {
+      font-size: var(--font-size-3);
+    }
+    .nombre31 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+   /*---------------------------------*/
+   .nombre32 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre32 .imagen32 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/32.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre32 .imagen32:hover {
+    background: url(imagenes/32a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre32 .t32 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre32 .imagen32{
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre32 .t32 {
+      font-size: var(--font-size-3);
+    }
+    .nombre32 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+   /*---------------------------------*/
+   .nombre33 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre33 .imagen33 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/33.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre33 .imagen33:hover {
+    background: url(imagenes/33a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre33 .t33 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre33 .imagen33 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre33 .t33 {
+      font-size: var(--font-size-3);
+    }
+    .nombre33 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+   /*---------------------------------*/
+   .nombre34 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre34 .imagen34 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/34.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre34 .imagen34:hover {
+    background: url(imagenes/34a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre34 .t34 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre34 .imagen34 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre34 .t34 {
+      font-size: var(--font-size-3);
+    }
+    .nombre34 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+  /*---------------------------------*/
+  .nombre35 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre35 .imagen35 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/35.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre35 .imagen35:hover {
+    background: url(imagenes/35a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre35 .t35 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre35 .imagen35 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre35 .t35 {
+      font-size: var(--font-size-3);
+    }
+    .nombre35 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+   /*---------------------------------*/
+   .nombre36 {
+    font-family: var(--fuente-nombre);
+    color: var(--color-letra);
+    font-size: var(--tam-nombre);
+    background-color: var(--color-fondo2);
+    margin: 10px auto;
+    padding-top: 10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .nombre36 .imagen36 {
+    width: var(--tam-img);
+    height: var(--tam-img);
+    background: url(imagenes/36.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 0.1px solid black;
+    border-image-width: 30px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+  }
+  .nombre36 .imagen36:hover {
+    background: url(imagenes/36a.gif);
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    
+  }
+  .nombre36 .t36 {
+    width: 120px; /* cambiar a 120px*/
+    height: auto;
+    background-size: contain;
+    font-size: var(--tam-texto);
+    font-family: var(--fuente-texto);
+    color: var(--color-4);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    .nombre36 .imagen36 {
+      width: var(--ancho);
+      height: var(--alto);
+      font-size: var(--font-size-1);
+      border: 0.1px solid black;
+    border-image-width: 50px;
+    border-image-source: url(imagenes/borde2.png);
+    border-image-slice: 100;
+    border-image-outset: 0.1px;
+    }
+    .nombre36 .t36 {
+      font-size: var(--font-size-3);
+    }
+    .nombre36 {
+      font-size: var(--font-size-4);
+      
+    }
+  }
+
+
